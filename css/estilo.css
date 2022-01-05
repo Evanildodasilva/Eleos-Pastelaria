@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  color:rgb(0, 0, 0);
+    background-color:rgb(247, 229, 229);
+    box-sizing: border-box;
+    justify-content: center;
+  
+
+}
+
+/*  Secção da Header (MENU)*/
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 12px;
+    overflow: hidden;
+    align-items:center ;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+nav a{
+    color: white;
+    float: right;
+    font-weight: 600;
+    
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+   
+    
+}
+
+
+
+
+nav{
+    background-color:rgb(8, 8, 8);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+   
+   
+}
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+    
+    
+    
+}
+
+
+.logo {
+    
+    margin:10px;
+    margin-top: 10px;
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    line-height: 50px;
+
+    
+
+
+}
+.logo h2{
+    color: rgb(238, 151, 22);
+    font-family: 'Poppins',sans-serif;
+
+}
+    header{
+        display: flex;
+        z-index: 10;
+        padding-bottom: 15px;
+        
+       
+    }
+
+    .botaoComprarAgora{
+        margin-right: 10px;
+        border: none;
+        font-weight: 600;
+        border: 1px solid orange;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .apresentacao{
+        margin-top: 10px;
+        margin-bottom: 100px;
+        height: 660px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        background: url(header.jpg) no-repeat center center/cover;
+        
+    }
+.welcome{
+    margin-top: 100px;
+    margin-left: 1px;
+    margin-right: 2px;
+    height: 540px;
+    width: 100%;
+    background: url(bolos/logo.png) no-repeat center ;
+    display: flex;
+
+}
+
+
+
+
+.apresentacao h1{
+    margin-top: 188px;
+    margin-left: 50px;
+    font-size: 41px;
+    width: 100%;
+    padding: 50px;
+    color: white;
+   margin-right: 1px;
+   text-align: start;
+   display: flex;
+   font-weight: 500;
+   font-family:'Ubuntu', sans-serif  ;
+  
+   
+}
+.alinharTexto{
+    margin-top: 1px;
+    width: 570px;
+    margin-left: 50px;
+}
+
+.comprarAgora{
+    margin-left: 1px;
+    background-color: brown;
+    height: 50px;
+  
+   
+}
+.apresentacao h2{
+    color: white;
+     width: 173px;
+     padding:10px;
+     border-radius: 5px;
+     border: 1px solid orange;
+     height: 55px;
+     cursor: pointer;
+     background-color: rgb(255, 140, 9);
+     text-align: start;
+     margin-right: 500px;
+     margin-left: 100px;
+     font-family: 'Ubuntu', sans-serif;
+   
+     
+}
+
+.apresentacao h2:hover{
+    background-color: transparent;
+    opacity: 100px;
+    transition: 1s  left linear ;
+}
+
+
+/* Menu Hamburguer*/
+
+.checkbtn{
+    color: white;
+    font-size: 32px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 17px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+ 
+
+
+
+.alinhar-icons{
+    display: flex;
+    margin-bottom: 20px;
+ 
+}
+footer  img{
+    width: 200px; 
+    height: 200px;
+}
+
+
+.sobre{
+    
+    margin-top: 50px;
+    color: white;
+    padding: 10px;
+    justify-content: start;
+    margin-left:10px;
+    margin-right: 80px;
+}
+
+.midias{
+    margin-top: 50px;
+    float: right;
+    margin-left: 10px;
+   
+     
+
+}
+footer{
+    background-color:rgba(0, 0, 0, 0.884);
+    border-radius: 10px;
+    display: flex;
+    flex-flow:row wrap;
+    height: 16%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    
+               
+}
+footer li{
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
+
+}
+footer li img{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+
+   
+}
+  footer h3{
+      font-weight: 600;
+  }
+ 
+  
+/* Media Queries , Mobile */
+
+@media (max-width: 900px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    .titulos{
+        font-size:29px ;
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(22, 20, 20, 0.884);
+        justify-content: center;
+        top:58.2px;
+        right:-100%;
+        transition: all 1s;
+        display: block;
+
+        
+        
+        
+    }
+    /* Secção logotipo */
+
+    .logo{
+        margin-right:2px;
+        margin-left:1px;
+        font-size: 12px;
+        position: fixed;
+    }
+    .logo h2{
+        font-size: 20px;
+        margin-left: 1px;
+        margin-right: 1px;
+      
+    }
+
+    #check:checked ~ ul{
+        right: 0;
+    }
+
+    /* Secção nav Mobile*/
+    nav ul li{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        line-height: 40px;
+    }
+    nav{
+        height: 13%;
+        position:fixed;
+    
+        
+
+    }
+
+    .apresentacao{
+        height: 500px;
+        width: 100%;
+        margin-right: 0px;
+      
+    } 
+.welcome{
+    margin-top: 1px;
+    height: 100%;
+    width: 100%;
+    margin-left: 0px;
+    display: block;
+    display: none;
+  
+}
+   
+
+.apresentacao h1{
+    margin-top: 100px;
+    margin-left: 4px;
+    margin-right: 1px;
+    font-size: 28px;
+    width: 100%;
+   
+   
+}
+
+
+.alinharTexto{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: 1px;
+    margin-left: 1px ;
+  
+}
+
+.apresentacao h2{
+    margin-top: 1px;
+    margin-left: 49px;
+    width: 174px;
+}
+    .botaoComprarAgora{
+        height: 60px;
+    }
+   
+    .rodape{
+        display: block;
+    }
+    .sobre{
+        margin-top: 5px;
+    }
+
+.midias{
+  
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+ 
+ }
+ footer{
+    width: 100%;
+}
+
+    
+}
+
+
+
+.botaoComprarAgora:hover{
+    background-color: rgba(243, 139, 21, 0.836);          
+    cursor: pointer;
+    
+}
+
+
+nav li a::after{
+    content: "";
+    background-color: rgb(247, 170, 4);
+    height: 2px;
+    display: block;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+
+
+  
+}
+nav li a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+    margin-top: 7px;
+    height: 2px;
+}
+.titulos{
+    font-family:"Poppins",sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin: 10px;
+    margin-left: 1%;
+    
+}
+      
+    .paragrafo{
+        padding-top: 100px;
+    }
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+   .card{
+       background:white;
+       width: 249px;
+       margin: 8px;
+       border-radius: 15px 15px;
+       height: 380px;
+   }
+   .card-contacto{
+    background:white;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 15px 15px;
+    text-align: center;
+    cursor: pointer;
+
+   }
+   .card-imagem{
+       justify-content: center;
+       align-items: center;
+       margin-left: 80px;
+       margin-top: 40px;
+     height: 60px;
+     width: 60px;
+     margin-bottom:15px;
+     background-size: cover;
+    cursor: pointer;
+}
+  
+   .card-contacto h2{
+    padding: 10px;
+    color: #333;
+
+   }
+   .card-contacto{
+    padding: 10px;
+    color: #333;
+   }
+   #contacto {
+    text-align:center; 
+    font-family:'Poppins',sans-serif;
+     color: #333; 
+    padding-top: 80px;
+   }
+   .paragrafo2{
+       height: 40px;
+   }
+
+   .card-image{
+       height: 200px;
+       margin-bottom:15px;
+       background-size: cover;
+   }
+   img{
+       width: 100%;
+       height: 100%;
+       border-radius: 6px;
+   }
+   .card p{
+       padding: 10px;
+       padding-left: 13px;
+       color: #333;
+          
+    font-family: "Poppins",sans-serif;
+    margin-top: 1px;
+      
+   }
+   .card h2{
+    padding: 10px;
+    padding-left: 13px;
+    font-size: 18px;
+    color: #333;
+    font-family: "Poppins",sans-serif;
+}
+
+.botaoComprar{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight:600;
+    background-color: rgba(233, 127, 27, 0.993) ;
+    border-radius: 5px;   
+    font-family: "Poppins",sans-serif;
+}
+a{
+    text-decoration:none;
+}
+ .card h1{
+    margin-top: 1px;
+    font-family: "Poppins",sans-serif;
+ }
+.botaoComprar:hover{
+    background-color: #ec850f ;
+    transition: height 0.3s linear;
+}
+.card:hover{
+    border: 1px solid  rgba(238, 117, 18, 0.884);
+    transition: all 1s ease;
+   transform: scale(1.04);
+   z-index: 1;
+}
+.card-contacto:hover{
+    transition: all 30ms ease;
+    transform: scale(1.05);
+    z-index: 1;
+}
